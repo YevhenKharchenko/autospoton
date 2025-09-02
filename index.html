@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Autospoton</title>
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://autospoton.com/" />
+    <link rel="icon" type="image/png" href="/autospoton/favicon.png" />
+    
+    <script type="module" crossorigin src="/autospoton/commonHelpers3.js"></script>
+    <link rel="modulepreload" crossorigin href="/autospoton/assets/header-cc2ba5d9.js">
+    <link rel="modulepreload" crossorigin href="/autospoton/assets/vendor-74664e07.js">
+    <link rel="stylesheet" href="/autospoton/assets/header-afd102fd.css">
+    <link rel="stylesheet" href="/autospoton/assets/vendor-fef9b9da.css">
+  </head>
+  <body>
+    <header class="header">
+  <div class="container header-container">
+    <nav class="nav">
+      <a class="header-logo-link" href="./"
+        ><picture>
+          <source
+            srcset="/autospoton/assets/header-logo-desk-601d2344.png "
+            media="(min-width: 1440px)"
+            width="40"
+            height="40" />
+          <source
+            srcset="data:image/png;base64,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 "
+            width="20"
+            height="20" />
+          <img
+            class="hero-title-img"
+            src="data:image/png;base64,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"
+            alt="Logo"
+            width="20"
+            height="20" /></picture
+        ><span class="header-span">Autospoton</span></a
+      >
+      <ul class="nav-list">
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#intro">Intro</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#services">Services</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#benefits">Benefits</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#process">Process</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#models"
+            >Campaign Models</a
+          >
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#studies">Case Studies</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#gallery">Gallery</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#blog">Blog</a>
+        </li>
+      </ul>
+      <button class="nav-btn" type="button" aria-label="Open mobile menu">
+        <svg class="menu-icon" width="24" height="24">
+          <use href="/autospoton/assets/sprite-c89213ea.svg#icon-menu"></use>
+        </svg>
+      </button>
+      <button class="close-btn" type="button" aria-label="Close mobile menu">
+        <svg class="close-icon" width="24" height="24">
+          <use href="/autospoton/assets/sprite-c89213ea.svg#icon-close"></use>
+        </svg>
+      </button>
+    </nav>
+  </div>
+</header>
+
+    <div class="context-menu">
+  <nav class="context-nav">
+    <ul class="context-nav-list">
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#intro">Intro</a>
+      </li>
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#services">Services</a>
+      </li>
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#benefits">Benefits</a>
+      </li>
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#process">Process</a>
+      </li>
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#models"
+          >Campaign Models</a
+        >
+      </li>
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#studies"
+          >Case Studies</a
+        >
+      </li>
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#gallery">Gallery</a>
+      </li>
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#blog">Blog</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+    <main>
+      <section class="section hero-section" id="home">
+  <div class="container hero-container">
+    <div class="hero-content-wrapper">
+      <h1 class="hero-title">
+        Your Ads<br />
+        <span class="hero-title-span">Sharper. Smarter. Faster</span>
+      </h1>
+      <p class="hero-text">
+        Autospoton turns your advertising budget into measurable growth with
+        targeted campaigns and automated optimization
+      </p>
+      <a href="#models" class="hero-btn">Launch My Campaign</a>
+    </div>
+  </div>
+</section>
+
+      <section class="section intro-section" id="intro">
+  <div class="container intro-container">
+    <h2 class="section-title intro-title">Intro</h2>
+    <p class="section-subtitle intro-subtitle">
+      From First Click to Last Conversion — We’ve Got You Covered
+    </p>
+    <ul class="intro-list">
+      <li class="intro-list-item">
+        <p class="intro-list-item-text">Data-driven ad targeting</p>
+      </li>
+      <li class="intro-list-item">
+        <p class="intro-list-item-text">Multi-platform expertise</p>
+        <div class="intro-item-img-wrapper">
+          <img
+            src="data:image/png;base64,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"
+            alt="Meta logo"
+            width="66"
+            height="13"
+          />
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAYAAADFw8lbAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJXSURBVHgB7Zk/SFtBHMe/LyaiHUzEoSgWqoV2yJJiO7S01NJ2bGuWrkkmx+oibsZNnLI6aRxdRFcVM7mIEEEHBTWg6KLk6WD8i97vJCGSu8tT3r28B/nAe3nvdz8eX353v/vd5QCPYPD7wGwIjQ2T7KmXXSG4hTtM4fp2EKmo6ecGvy/F7n1wGwbiCDTQU8LHDT4jBrdiPATQB/fDh6IXhHL81Rx6u9v4lb+4wdzmEXL5AmqBUujIz7dI/npXek/9DiM+k0V6bR9OI+16imK5yCIkNtQUgNMohYoINQfw7U0bnOZZyXRauIbTSIVmdk+EdkomWZtOlEJHF7Ye2UhkdHoVtUCZ9cnFbUytHSDS0cLfMzsnMC+c73ai6jyay5/zq9ZUFWoHNJ31hV8i2NyI1iY/sodnyJnn/NcqUqGvW19gb/hHhZ2i2zW2VHqP93Ri8t/7Cr/vEytcyP+v3Rj40iWce+lbCVZArCSntlofZPPtcv8nJFl1kxUICsZy/2fEel5V/Z42oSQw0hG05Gul2mkTalUkQdUu/qFT6aN9mWeyVVf26IxNbcdKv7/hdmW71qynJImmV0tzL43J2dhHRNpbKnxFtnK0RpQyurxAUJYPzm8Ifan7VWgTStEUFQqy03AQQRGXoU3o+uGptM0sXOGpaBNq2rwU9Mzmri7UbupC7aYu1G7qQu3m4R/nofk7UaOs9pbXcFrwihYUVJlkO1Yr333E+B9DucyzsvskMU/dQj9nV+u5MWrC5RSFZuBWDHYygqLQq9sEOytJw12YXOQlO77xEvd7ILvtLYioPgAAAABJRU5ErkJggg=="
+            alt="Linkedin logo"
+            width="21"
+            height="21"
+          />
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAqCAYAAADbCvnoAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPiSURBVHgBxZg/TBNRHMe/R+ugJtCowUlz6qCJAzVxw0gZNNEo1E3j0DIyKCwOTpREo4kmgINEF2AwcQMV4khRSRw0QdFEJdoCA+FfrgVjYgg8f793XP9cW/oO7uo3eX3v+u7P596f35/T4JZWFkSJnjiqaxuhKD/c1rPneYf7Vv/qy7gcBXxJDUNxVEw8QuYo5ZUAdgkDF4VAc5/KbargsVJYwwTS3AyqnO85EKsT37kKCoQD5c6tCFAcS+jBT2qtR1ExlVhDyFlL73E2oTJKFQHiomOP6MLJLlRECkCZEqzrgzGnw1M5AeJy+xafP4r0fAzGQhSuyykQl8OHBHofCcxMZay8BrdkuY7qWmxHZDgnqEq57zq2L2k4PbdDtLNkUZU6kJEI0OILwlgMydoB0CjqEcEhpfO3njJ+eNV6mLibabXp5p/O1x9D9ePU2A0cSb7CfGQAs0jiD9SB2Eb4fH308FDeIL4dBya/AOkVwmqKmVQvY1CSljiNNy1kqeMxnIgQUIid7jSBsQMuDfR7KYIN0S2tPStFnrr3KfD4iQTJqrljsxGDA1FM1E9VP4EFdeyO0j8NyIkE8oFWl9uwsd6dOWaIew9sIO6IwHibt1vHBKhTFcgC8XoROTCtNwuiPy9FgEmuTSC5ZkRfpvdaBBh5jf8hE8jnb5POmMVTVASGwgeEsF/WpXaIO0CGQYt3LSqPpmdMIBtIG47SZB+Tba/lh28tLJ/Lam0rOIGNWhA11mGKyhCwMWYe+mrgOhC0ZmnseHTejed1duBELgztCu2Ktfi8kh8arR02vmxrbIpmzX2SYBoJJgWP5ef4TbY+f83rCOFAjlNcb9Ew7DkMK+sXJidLnUMZ53AcFRIDmW9us8ZZ/yI+lb2L3KnFFXCYrWeBbEpmnJ5moJzMnUovlS7o0rEXTlQFIcaKdTBMD35xUyX2MR3t9GxBRxDVcAakaXHZOlwYQMXwDQOYCW46vuJaXWQYs5+dsU0NtDlMiWkoied/ZcHA9asls4PzqB0syKM4auQ0xso2Jj8I1FTnXUc7lb96bJZLISiLc6ORQbU8SuZSC4kMiAXDKY3tGrLyFlACjsSjlJ5P2N8QW+VREuSjCVrkOjKqOaOj9m3IBjUXwv07zhK9LXL4BM5ZMMaWa7AMVBRn6t2EoRJux47U9TCMQI3hDkxTN1ySfgEHE6og/O2nA8etb4kWTD+2oZK5Fc/7FFZH7+KHPoblolEiO+AGiiILgzfRQ+nRtqaqbLJHYFH67SDLrVvuhKMABigSQcbplp07+fyrnH0SWIgiRfJZWh0sy2yKA7c41S/cCN7+AV2nQqrAJRUqAAAAAElFTkSuQmCC"
+            alt="TikTok logo"
+            width="18"
+            height="21"
+          />
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAITSURBVHgBvVSxbtRAEH3rvQhFaVwh6ExBQxElVUCA5CtBROd8AZcfAFIgRBVdiaDIF3Au6O1I1JyRECCa3A+gGFEkSoMTlOiS2DsZb+4c++7sixIlT1rN7uzs25nZnQGuAGKSAdkwcQQLBkuFSHxH98Kk9Ag2767y1B6zHYDQEt9YnodUe5agzVMHk+FCYkUEiPLK2gihQoenczgfbPT4DCpI2cO1EUKCz/GsswxZmv0InvMIcYy6+MmyDPRBOrQoiB5jMDZ1XsfZ2rDoPj9eCbKc0tcbHfxj8y8xsKHAXtyp9KICeVLKtL9iV7xOlvOGt95sWJwtq4qsdxh3o7X5SOeUOjOcx/hsd0H6aYILUEZTCFqtIp2awjyLrnG6TMzCbqJ2cQFIVdM8fVIZFbeFhUugT7ofDhT7VMPHw3uNUUvlUpLU84O/WZA36SWxLuHC6++oafvt3gJYpqr65yU/KPMmfThBcjM7zxdsv5+t5zwFPh3cbb3YfTggTG9rO55jjSO0269sJuwUlILcbJrXL3qOR0M1z2tXJViXEpFSsKSBRmqzs/UAf8MnpzYC7va72ewLFspUAsv8sSzkSpVvbTJhU4dl6Es0bt7+gemZLfz53QijPXOl4DSGwCGbMXEPELq+K8GH/f/sSLDkR5WkAzzznDQNL1HWT4FW2UNO7PwpnnrOHEduckeIDrg7DXt2LTgB7nfJWfTgSBwAAAAASUVORK5CYII="
+            alt="Google logo"
+            width="21"
+            height="21"
+          />
+        </div>
+      </li>
+      <li class="intro-list-item">
+        <p class="intro-list-item-text">
+          AI-powered optimization for better ROI
+        </p>
+      </li>
+      <li class="intro-list-item">
+        <p class="intro-list-item-text">Transparent reporting you can trust</p>
+      </li>
+    </ul>
+    <a href="#models" class="intro-btn">Book a Free Strategy Call</a>
+  </div>
+</section>
+
+      <section class="section services-section" id="services">
+  <div class="services-section-wrapper">
+    <div class="container services-container">
+      <h2 class="section-title services-title">Services</h2>
+      <p class="section-subtitle services-subtitle">What We Do Best</p>
+      <div class="services-swiper-container">
+        <ul class="swiper-wrapper services-swiper-wrapper">
+          <li class="swiper-slide services-slide">
+            <h3 class="services-slide-title">Campaign Strategy Development</h3>
+            <p class="services-slide-text">
+              audience research, competitive analysis, funnel planning
+            </p>
+          </li>
+          <li class="swiper-slide services-slide">
+            <h3 class="services-slide-title">Creative Production</h3>
+            <p class="services-slide-text">
+              ad visuals, copywriting, video ads, landing pages
+            </p>
+          </li>
+          <li class="swiper-slide services-slide">
+            <h3 class="services-slide-title">Ad Buying & Management</h3>
+            <p class="services-slide-text">
+              across search, social, display, and native platforms
+            </p>
+          </li>
+          <li class="swiper-slide services-slide">
+            <h3 class="services-slide-title">Conversion Rate Optimization</h3>
+            <p class="services-slide-text">
+              testing and refining to boost results
+            </p>
+          </li>
+          <li class="swiper-slide services-slide">
+            <h3 class="services-slide-title">Analytics & Reporting</h3>
+            <p class="services-slide-text">
+              dashboards and insights for smarter decisions
+            </p>
+          </li>
+          <li class="swiper-slide services-slide">
+            <h3 class="services-slide-title">Brand Awareness Boost</h3>
+            <p class="services-slide-text">
+              storytelling campaigns for long-term impact
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="dots">
+        <div class="services-dot active"></div>
+        <div class="services-dot"></div>
+        <div class="services-dot"></div>
+        <div class="services-dot"></div>
+        <div class="services-dot"></div>
+        <div class="services-dot"></div>
+      </div>
+      <a href="#models" class="services-btn">View All Services</a>
+    </div>
+  </div>
+</section>
+
+      <section class="section benefits-section" id="benefits">
+  <div class="benefits-section-wrapper">
+    <div class="container benefits-container">
+      <h2 class="section-title benefits-title">Benefits</h2>
+      <p class="section-subtitle benefits-subtitle">
+        Why Brands Choose Autospoton
+      </p>
+      <div class="benefits-swiper-container">
+        <ul class="swiper-wrapper benefits-swiper-wrapper">
+          <li class="swiper-slide benefits-slide">
+            <h3 class="benefits-slide-title">ROI Focused</h3>
+            <p class="benefits-slide-text">
+              every decision backed by performance metrics
+            </p>
+          </li>
+          <li class="swiper-slide benefits-slide">
+            <h3 class="benefits-slide-title">Full Transparency</h3>
+            <p class="benefits-slide-text">
+              no hidden budgets or black-box strategy
+            </p>
+          </li>
+          <li class="swiper-slide benefits-slide">
+            <h3 class="benefits-slide-title">Creative That Converts</h3>
+            <p class="benefits-slide-text">
+              content designed to engage and sell
+            </p>
+          </li>
+          <li class="swiper-slide benefits-slide">
+            <h3 class="benefits-slide-title">Cross-Platform Mastery</h3>
+            <p class="benefits-slide-text">from Google Ads to TikTok trends</p>
+          </li>
+          <li class="swiper-slide benefits-slide">
+            <h3 class="benefits-slide-title">Faster Scaling</h3>
+            <p class="benefits-slide-text">
+              real-time optimization powered by automation
+            </p>
+          </li>
+          <li class="swiper-slide benefits-slide">
+            <h3 class="benefits-slide-title">Dedicated Team</h3>
+            <p class="benefits-slide-text">
+              strategists, designers, and media buyers in sync
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="dots">
+        <div class="benefits-dot active"></div>
+        <div class="benefits-dot"></div>
+        <div class="benefits-dot"></div>
+        <div class="benefits-dot"></div>
+        <div class="benefits-dot"></div>
+        <div class="benefits-dot"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="section process-section" id="process">
+  <div class="container process-container">
+    <h2 class="section-title process-title">Process</h2>
+    <p class="section-subtitle process-subtitle">
+      How We Turn Ad Spend into Results
+    </p>
+    <ul class="process-list">
+      <li class="process-list-item">
+        <p class="process-item-number">1</p>
+        <div class="process-item-text-wrapper">
+          <h3 class="process-item-title">Audit & Strategy</h3>
+          <p class="process-item-text">
+            We review your current campaigns and design a data-driven roadmap
+          </p>
+        </div>
+      </li>
+      <li class="process-list-item">
+        <p class="process-item-number">2</p>
+        <div class="process-item-text-wrapper">
+          <h3 class="process-item-title">Creative & Setup</h3>
+          <p class="process-item-text">
+            We produce assets and configure campaign structures
+          </p>
+        </div>
+      </li>
+      <li class="process-list-item">
+        <p class="process-item-number">3</p>
+        <div class="process-item-text-wrapper">
+          <h3 class="process-item-title">Launch & Test</h3>
+          <p class="process-item-text">
+            Initial campaigns go live with A/B testing
+          </p>
+        </div>
+      </li>
+      <li class="process-list-item">
+        <p class="process-item-number">4</p>
+        <div class="process-item-text-wrapper">
+          <h3 class="process-item-title">Optimize & Scale</h3>
+          <p class="process-item-text">
+            Winning ads get more budget, underperformers get replaced
+          </p>
+        </div>
+      </li>
+      <li class="process-list-item">
+        <p class="process-item-number">5</p>
+        <div class="process-item-text-wrapper">
+          <h3 class="process-item-title">Report & Repeat</h3>
+          <p class="process-item-text">
+            Continuous learning to improve each cycle
+          </p>
+        </div>
+      </li>
+    </ul>
+    <p class="process-call-text">
+      <span class="process-text-span">Need help?</span> Call us: +1 646 980 4421
+    </p>
+  </div>
+</section>
+
+      <section class="section models-section" id="models">
+  <div class="container models-container">
+    <h2 class="section-title models-title">Campaign Models</h2>
+    <p class="section-subtitle models-subtitle">
+      Campaign Approaches Tailored for You
+    </p>
+    <ul class="models-list">
+      <li class="models-list-item">
+        <h3 class="models-item-title">Starter Launch</h3>
+        <p class="models-item-text">
+          Ideal for brands entering digital ads. Includes essential targeting,
+          creative, and tracking setup
+        </p>
+      </li>
+      <li class="models-list-item">
+        <h3 class="models-item-title">Growth Accelerator</h3>
+        <p class="models-item-text">
+          Designed for scaling campaigns with advanced segmentation,
+          retargeting, and multi-channel synergy
+        </p>
+      </li>
+      <li class="models-list-item">
+        <h3 class="models-item-title">Market Dominator</h3>
+        <p class="models-item-text">
+          Full-spectrum advertising with omnichannel presence, real-time
+          optimization, and aggressive scaling for maximum reach
+        </p>
+      </li>
+    </ul>
+    <p class="models-bottom-list-title">Common Across All Models:</p>
+    <ul class="models-bottom-list">
+      <li class="models-bottom-list-item">
+        <p class="models-bottom-item-text">Ongoing optimization</p>
+      </li>
+      <li class="models-bottom-list-item">
+        <p class="models-bottom-item-text">Weekly performance reports</p>
+      </li>
+      <li class="models-bottom-list-item">
+        <p class="models-bottom-item-text">Flexible budget allocation</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="section studies-section" id="studies">
+  <div class="container studies-container">
+    <h2 class="section-title studies-title">Case Studies</h2>
+    <p class="section-subtitle studies-subtitle">Real Results, Real Brands</p>
+    <ul class="studies-list">
+      <li class="studies-list-item">
+        <div class="studies-item-title-wrapper">
+          <h3 class="studies-item-title">E-commerce Brand</h3>
+          <svg class="studies-icon" width="40" height="40">
+            <use href="/autospoton/assets/sprite-c89213ea.svg#icon-arrow-right"></use>
+          </svg>
+        </div>
+        <p class="studies-item-text">
+          3.2x ROAS increase in 60 days through TikTok + Meta integration
+        </p>
+      </li>
+      <li class="studies-list-item">
+        <div class="studies-item-title-wrapper">
+          <h3 class="studies-item-title">SaaS Platform</h3>
+          <svg class="studies-icon" width="40" height="40">
+            <use href="/autospoton/assets/sprite-c89213ea.svg#icon-arrow-right"></use>
+          </svg>
+        </div>
+        <p class="studies-item-text">
+          40% lower CPL with AI-driven ad targeting on LinkedIn
+        </p>
+      </li>
+      <li class="studies-list-item">
+        <div class="studies-item-title-wrapper">
+          <h3 class="studies-item-title">Local Business</h3>
+          <svg class="studies-icon" width="40" height="40">
+            <use href="/autospoton/assets/sprite-c89213ea.svg#icon-arrow-right"></use>
+          </svg>
+        </div>
+        <p class="studies-item-text">
+          5x lead growth using geo-targeted Google Ads campaigns
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="section gallery-section" id="gallery">
+  <div class="container gallery-container">
+    <h2 class="section-title gallery-title">Gallery</h2>
+    <p class="section-subtitle gallery-subtitle">Behind the Campaigns</p>
+    <div class="gallery-list-wrapper">
+      <picture>
+        <source
+          srcset="/autospoton/assets/gallery-img1-desk-785cdcff.png "
+          media="(min-width: 1440px)"
+          width="526"
+          height="734" />
+        <source
+          srcset="/autospoton/assets/gallery-img1-mob-83f1c25e.png "
+          width="343"
+          height="479" />
+        <img
+          class="gallery-img"
+          src="/autospoton/assets/gallery-img1-mob-83f1c25e.png"
+          alt="People working"
+          width="343"
+          height="479"
+          loading="lazy"
+      /></picture>
+      <div class="gallery-list">
+        <picture>
+          <source
+            srcset="/autospoton/assets/gallery-img2-desk-0c7ba599.png "
+            media="(min-width: 1440px)"
+            width="416"
+            height="355" />
+          <source
+            srcset="/autospoton/assets/gallery-img2-mob-e968d457.png "
+            width="164"
+            height="140" />
+          <img
+            class="gallery-img"
+            src="/autospoton/assets/gallery-img2-mob-e968d457.png"
+            alt="People working"
+            width="164"
+            height="140"
+            loading="lazy"
+        /></picture>
+        <picture>
+          <source
+            srcset="/autospoton/assets/gallery-img3-desk-6f731d4f.png "
+            media="(min-width: 1440px)"
+            width="306"
+            height="355" />
+          <source
+            srcset="/autospoton/assets/gallery-img3-mob-d4bf8837.png "
+            width="163"
+            height="140" />
+          <img
+            class="gallery-img"
+            src="/autospoton/assets/gallery-img3-mob-d4bf8837.png"
+            alt="People working"
+            width="163"
+            height="140"
+            loading="lazy"
+        /></picture>
+        <picture>
+          <source
+            srcset="/autospoton/assets/gallery-img4-desk-27990ba6.png "
+            media="(min-width: 1440px)"
+            width="746"
+            height="355" />
+          <source
+            srcset="/autospoton/assets/gallery-img4-mob-8a3b89a2.png "
+            width="343"
+            height="163" />
+          <img
+            class="gallery-img"
+            src="/autospoton/assets/gallery-img4-mob-8a3b89a2.png"
+            alt="People working"
+            width="343"
+            height="163"
+            loading="lazy"
+        /></picture>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="section blog-section" id="blog">
+  <div class="container blog-container">
+    <h2 class="section-title blog-title">Blog</h2>
+    <p class="section-subtitle blog-subtitle">
+      Insights from the Autospoton Team
+    </p>
+    <ul class="blog-list">
+      <li class="blog-list-item">
+        <p class="blog-item-text">The Future of AI in Advertising</p>
+        <svg class="blog-icon" width="56" height="56">
+          <use href="/autospoton/assets/sprite-c89213ea.svg#icon-arrow-right"></use>
+        </svg>
+      </li>
+      <li class="blog-list-item">
+        <p class="blog-item-text">5 Ad Mistakes Costing You Thousands</p>
+        <svg class="blog-icon" width="56" height="56">
+          <use href="/autospoton/assets/sprite-c89213ea.svg#icon-arrow-right"></use>
+        </svg>
+      </li>
+      <li class="blog-list-item">
+        <p class="blog-item-text">
+          Cross-Platform Campaigns That Actually Work
+        </p>
+        <svg class="blog-icon" width="56" height="56">
+          <use href="/autospoton/assets/sprite-c89213ea.svg#icon-arrow-right"></use>
+        </svg>
+      </li>
+    </ul>
+  </div>
+</section>
+
+    </main>
+    <footer class="footer" id="footer">
+  <div class="container footer-container">
+    <p class="footer-top-text">Autospoton Media Solutions LLC</p>
+    <nav class="footer-nav">
+      <ul class="footer-list">
+        <li class="footer-list-item">
+          <a class="footer-link" href="./privacy-policy.html"
+            >Privacy<br class="footer-br" />
+            Policy</a
+          >
+        </li>
+        <li class="footer-list-item">
+          <a class="footer-link" href="./terms-and-conditions.html"
+            >Terms &<br class="footer-br" />
+            Conditions</a
+          >
+        </li>
+        <li class="footer-list-item">
+          <a class="footer-link" href="./cookies-policy.html"
+            >Cookies<br class="footer-br" />
+            Policy</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <p class="footer-text">
+      © 2025 autospoton.com — Performance Advertising Agency
+    </p>
+  </div>
+</footer>
+
+    <section id="cookie-banner" class="cookie-banner-section">
+  <div class="cookie-banner-text-wrapper">
+    <p class="cookie-banner-text">
+      We use cookies to improve your experience on our website.<br />
+      By browsing this website, you agree to our use of cookies
+    </p>
+    <a class="cookie-banner-link" href="../cookies-policy.html">Learn more</a>
+  </div>
+  <div class="cookie-banner-buttons">
+    <button class="cookie-decline-btn" id="cookie-decline">
+      Decline cookies
+    </button>
+    <button class="cookie-accept-btn" id="cookie-accept">Allow cookies</button>
+  </div>
+</section>
+
+
+    
+  </body>
+</html>
