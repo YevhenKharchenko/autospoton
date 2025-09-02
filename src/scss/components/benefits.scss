@@ -1,9 +1,9 @@
-.services-section {
+.benefits-section {
   @include media(desktop) {
   }
 }
 
-.services-section-wrapper {
+.benefits-section-wrapper {
   padding-bottom: 80px;
   max-width: 375px;
   margin-left: auto;
@@ -16,23 +16,23 @@
   }
 }
 
-.services-container {
+.benefits-container {
   @include media(desktop) {
   }
 }
 
-.services-title {
+.benefits-title {
   @include media(desktop) {
   }
 }
 
-.services-subtitle {
+.benefits-subtitle {
   @include media(desktop) {
   }
 }
 
-.services-swiper-container {
-  max-width: 253px;
+.benefits-swiper-container {
+  max-width: 343px;
   margin-left: auto;
   margin-right: auto;
 
@@ -41,11 +41,11 @@
   }
 }
 
-.services-swiper-container.show {
+.benefits-swiper-container.show {
   visibility: visible;
 }
 
-.services-swiper-wrapper {
+.benefits-swiper-wrapper {
   @include media(desktop) {
     display: flex;
     flex-wrap: wrap;
@@ -56,30 +56,30 @@
   }
 }
 
-.services-slide {
-  background: rgba(37, 99, 235, 0.1);
+.benefits-slide {
+  background: #fff;
   border: 1px solid #2563eb;
   border-radius: 30px;
   padding: 16px;
-  max-width: 253px;
-  min-height: 130px;
+  max-width: 343px;
+  min-height: 99px;
   display: flex !important;
   flex-direction: column;
-  gap: 8px;
+  gap: 16px;
 
   @include media(desktop) {
     padding: 24px;
-    gap: 16px;
+    gap: 24px;
     width: 100% !important;
     max-width: 416px;
-    min-height: 142px;
+    min-height: 126px;
   }
 }
 
-.services-slide-title {
+.benefits-slide-title {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.5;
   color: #374151;
 
@@ -88,32 +88,19 @@
   }
 }
 
-.services-slide-text {
+.benefits-slide-text {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
   color: #415475;
-  margin-top: auto;
 
   @include media(desktop) {
     font-size: 16px;
   }
 }
 
-.dots {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-  margin-top: 32px;
-
-  @include media(desktop) {
-    display: none;
-  }
-}
-
-.services-dot {
+.benefits-dot {
   width: 32px;
   height: 32px;
   border-radius: 100%;
@@ -122,33 +109,6 @@
   transition: transform 0.3s ease-in-out;
 }
 
-.services-dot.active {
+.benefits-dot.active {
   background-color: #a3e635;
-}
-
-.services-btn {
-  backdrop-filter: blur(40px);
-  background: rgba(255, 255, 255, 0.05);
-  border: 2px solid #a3e635;
-  border-radius: 40px;
-  padding: 12px 24px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.5;
-  text-align: center;
-  color: #374151;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 32px;
-
-  @include media(desktop) {
-    padding: 16px 24px;
-    font-size: 24px;
-    max-width: max-content;
-    margin-left: auto;
-    margin-top: 24px;
-  }
 }
