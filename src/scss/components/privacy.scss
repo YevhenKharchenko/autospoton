@@ -10,12 +10,12 @@
 }
 
 .policy-main-title {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 28px;
   line-height: 1.5;
   text-align: center;
-  color: #111827;
+  color: #374151;
   margin-bottom: 24px;
 
   @include media(desktop) {
@@ -25,11 +25,11 @@
 }
 
 .policy-title {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 600;
   font-size: 20px;
   line-height: 1.5;
-  color: #111827;
+  color: #374151;
   margin-bottom: 24px;
 
   @include media(desktop) {
@@ -38,11 +38,11 @@
 }
 
 .policy-subtitle {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.5;
-  color: #111827;
+  color: #374151;
   margin-bottom: 24px;
 
   @include media(desktop) {
@@ -51,11 +51,11 @@
 }
 
 .policy-text {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
-  color: #111827;
+  color: #374151;
 
   &:not(:last-child) {
     margin-bottom: 24px;
@@ -72,11 +72,11 @@
 }
 
 .policy-item {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
-  color: #111827;
+  color: #374151;
   margin-bottom: 8px;
 
   &:last-child {
