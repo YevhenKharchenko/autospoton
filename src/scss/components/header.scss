@@ -1,16 +1,13 @@
 .header {
-  backdrop-filter: blur(30px);
-  background: #c8ecf3;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  background: transparent;
+  padding-top: 6px;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 10;
 
   @include media(desktop) {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 14px;
   }
 }
 
@@ -18,6 +15,11 @@
 }
 
 .nav {
+  backdrop-filter: blur(30px);
+  background: rgba(37, 99, 235, 0.1);
+  border: 1px solid #2563eb;
+  border-radius: 100px;
+  padding: 16px 16px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -37,11 +39,11 @@
 }
 
 .header-span {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.5;
-  color: #05163b;
+  color: #374151;
 
   @include media(desktop) {
     font-size: 32px;
@@ -54,16 +56,16 @@
   @include media(desktop) {
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: 20px;
   }
 }
 
 .nav-list-link {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 1.4;
-  color: #05163b;
+  color: #374151;
   transition: all 0.3s ease-in-out;
 
   &:hover,
@@ -85,11 +87,11 @@
 }
 
 .menu-icon {
-  stroke: #05163b;
+  stroke: #374151;
 }
 
 .close-icon {
-  stroke: #05163b;
+  stroke: #374151;
 }
 
 .close-btn {
@@ -100,4 +102,10 @@
   @include media(desktop) {
     display: none;
   }
+}
+
+.menu-is-open {
+  border: 1px solid #2563eb;
+  border-bottom: none;
+  border-radius: 40px 40px 0 0;
 }

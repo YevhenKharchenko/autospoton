@@ -1,14 +1,17 @@
 .context-menu {
   display: none;
   backdrop-filter: blur(30px);
-  background: #c8ecf3;
+  background: rgba(37, 99, 235, 0.1);
+  border: 1px solid #2563eb;
+  border-top: none;
+  border-radius: 0 0 40px 40px;
   padding: 0 16px 16px 16px;
   justify-content: end;
-  max-width: 375px;
+  max-width: 343px;
   width: 100%;
   margin: 0 auto;
   position: fixed;
-  top: 62px;
+  top: 69px;
   left: 0;
   right: 0;
   transform: none;
@@ -29,12 +32,12 @@
 }
 
 .context-list-link {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 1.5;
   text-align: right;
-  color: #05163b;
+  color: #374151;
   transition: all 0.3s ease-in-out;
 
   &:active {
